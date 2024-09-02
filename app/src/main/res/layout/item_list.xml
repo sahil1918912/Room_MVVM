@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:background="#FBE947">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_below="@+id/tvName"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/baseline_delete_outline_24"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/btnDelete"
+        android:background="@drawable/baseline_edit_24" />
+
+</RelativeLayout>
